@@ -12,10 +12,6 @@
   "dependencies": {
     "@mui/icons-material": "^5.14.12",
     "@mui/material": "^5.14.12",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.57",
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.10",
     "i18next": "^23.5.1",
     "ramda": "^0.29.1",
     "react": "^18.2.0",
@@ -33,7 +29,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.57",
     "@types/ramda": "^0.29.6",
+    "@types/react": "^18.2.25",
+    "@types/react-dom": "^18.2.10",
     "@types/react-query": "^1.2.9",
     "@types/yup": "^0.32.0",
     "prettier": "^3.0.3"
