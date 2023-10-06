@@ -1,0 +1,190 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Epic Quest",
+      "publisher": "MegaGames Inc.",
+      "publishedDate": "2022-01-15T00:00:00.000Z",
+      "coverPicture": "http://example.com/epic-quest-cover.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Space Adventure",
+      "publisher": "Galaxy Studios",
+      "publishedDate": "2020-05-20T00:00:00.000Z",
+      "coverPicture": "http://example.com/space-adventure-cover.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mystical Lands",
+      "publisher": "Fantasy Games",
+      "publishedDate": "2019-03-10T00:00:00.000Z",
+      "coverPicture": "http://example.com/mystical-lands-cover.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Underwater Odyssey",
+      "publisher": "DeepBlue Games",
+      "publishedDate": "2018-07-07T00:00:00.000Z",
+      "coverPicture": "http://example.com/underwater-odyssey-cover.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Desert Expedition",
+      "publisher": "SandsSoft",
+      "publishedDate": "2021-08-15T00:00:00.000Z",
+      "coverPicture": "http://example.com/desert-expedition-cover.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Skyline Racer",
+      "publisher": "TurboTech",
+      "publishedDate": "2019-11-23T00:00:00.000Z",
+      "coverPicture": "http://example.com/skyline-racer-cover.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Mystery Mansion",
+      "publisher": "Haunted Devs",
+      "publishedDate": "2022-02-01T00:00:00.000Z",
+      "coverPicture": "http://example.com/mystery-mansion-cover.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Lost in Jungle",
+      "publisher": "Adventure Studios",
+      "publishedDate": "2019-09-12T00:00:00.000Z",
+      "coverPicture": "http://example.com/lost-in-jungle-cover.jpg"
+    },{
+      "id": 9,
+      "name": "Dragon's Lair",
+      "publisher": "Elder Studios",
+      "publishedDate": "2021-04-12T00:00:00.000Z",
+      "coverPicture": "http://example.com/dragons-lair-cover.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Moonlight Shadows",
+      "publisher": "Nightfall Games",
+      "publishedDate": "2019-10-29T00:00:00.000Z",
+      "coverPicture": "http://example.com/moonlight-shadows-cover.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Robot Rebellion",
+      "publisher": "Tech Titans",
+      "publishedDate": "2020-03-18T00:00:00.000Z",
+      "coverPicture": "http://example.com/robot-rebellion-cover.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Kingdoms United",
+      "publisher": "MegaGames Inc.",
+      "publishedDate": "2020-12-05T00:00:00.000Z",
+      "coverPicture": "http://example.com/kingdoms-united-cover.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Future Frontiers",
+      "publisher": "Galaxy Studios",
+      "publishedDate": "2022-03-27T00:00:00.000Z",
+      "coverPicture": "http://example.com/future-frontiers-cover.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Zombie Uprising",
+      "publisher": "Haunted Devs",
+      "publishedDate": "2018-02-14T00:00:00.000Z",
+      "coverPicture": "http://example.com/zombie-uprising-cover.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Cybernetic Dreams",
+      "publisher": "Tech Titans",
+      "publishedDate": "2019-04-30T00:00:00.000Z",
+      "coverPicture": "http://example.com/cybernetic-dreams-cover.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Pirate's Treasure",
+      "publisher": "Adventure Studios",
+      "publishedDate": "2017-05-20T00:00:00.000Z",
+      "coverPicture": "http://example.com/pirates-treasure-cover.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Frozen Kingdom",
+      "publisher": "Elder Studios",
+      "publishedDate": "2021-07-17T00:00:00.000Z",
+      "coverPicture": "http://example.com/frozen-kingdom-cover.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Rising Sun Samurai",
+      "publisher": "Nightfall Games",
+      "publishedDate": "2019-08-23T00:00:00.000Z",
+      "coverPicture": "http://example.com/rising-sun-cover.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Urban Jungle",
+      "publisher": "TurboTech",
+      "publishedDate": "2020-06-15T00:00:00.000Z",
+      "coverPicture": "http://example.com/urban-jungle-cover.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Galactic Warriors",
+      "publisher": "Galaxy Studios",
+      "publishedDate": "2018-10-03T00:00:00.000Z",
+      "coverPicture": "http://example.com/galactic-warriors-cover.jpg"
+    }
+  ],
+  "persons": [
+    {
+      "id": 1,
+      "name": {
+        "first": "John",
+        "games": [1, 5, 7, 10, 12],
+        "last": "Doe"
+      },
+      "description": "A passionate gamer and developer."
+    },
+    {
+      "id": 2,
+      "name": {
+        "first": "Jane",
+        "games": [2, 8, 14, 17],
+        "last": "Smith"
+      },
+      "description": "A storyteller and game designer."
+    },
+    {
+      "id": 3,
+      "name": {
+        "first": "Alice",
+        "games": [3, 6, 9, 11, 13, 15],
+        "last": "Brown"
+      },
+      "description": "A renowned game critic."
+    },
+    {
+      "id": 4,
+      "name": {
+        "first": "Bob",
+        "games": [4, 16, 19],
+        "last": "White"
+      },
+      "description": "A professional esports player."
+    },
+    {
+      "id": 5,
+      "name": {
+        "first": "Charlie",
+        "games": [18, 20, 7, 5],
+        "last": "Green"
+      },
+      "description": "A game producer with a vision."
+    }
+  ]
+}
