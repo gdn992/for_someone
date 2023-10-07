@@ -55,7 +55,8 @@
       "publisher": "Adventure Studios",
       "publishedDate": "2019-09-12T00:00:00.000Z",
       "coverPicture": "http://example.com/lost-in-jungle-cover.jpg"
-    },{
+    },
+    {
       "id": 9,
       "name": "Dragon's Lair",
       "publisher": "Elder Studios",
@@ -147,7 +148,7 @@
         "first": "John",
         "last": "Doe"
       },
-        "games": [1, 5, 7, 10, 12],
+      "games": [1, 5, 7, 10, 12],
       "url": "https://mui.com/static/images/avatar/1.jpg",
       "description": "A passionate gamer and developer."
     },
@@ -157,7 +158,7 @@
         "first": "Jane",
         "last": "Smith"
       },
-        "games": [2, 8, 14, 17],
+      "games": [2, 8, 14, 17],
       "url": "https://mui.com/static/images/avatar/2.jpg",
       "description": "A storyteller and game designer."
     },
@@ -167,7 +168,7 @@
         "first": "Alice",
         "last": "Brown"
       },
-        "games": [3, 6, 9, 11, 13, 15],
+      "games": [3, 6, 9, 11, 13, 15],
       "url": "https://mui.com/static/images/avatar/3.jpg",
       "description": "A renowned game critic."
     },
@@ -177,7 +178,7 @@
         "first": "Bob",
         "last": "White"
       },
-        "games": [4, 16, 19],
+      "games": [4, 16, 19],
       "url": "https://mui.com/static/images/avatar/4.jpg",
       "description": "A professional esports player."
     },
@@ -185,9 +186,9 @@
       "id": 5,
       "name": {
         "first": "Charlie",
-        "games": [18, 20, 7, 5],
         "last": "Green"
       },
+      "games": [18, 20, 7, 5],
       "url": "https://mui.com/static/images/avatar/5.jpg",
       "description": "A game producer with a vision."
     }
