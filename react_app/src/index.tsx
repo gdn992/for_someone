@@ -8,8 +8,8 @@ import { BrowserRouter } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material'
 import axios from 'axios'
 
-// set default url
-axios.defaults.baseURL = 'https://localhost:8080/api/'
+axios.defaults.baseURL = 'http://localhost:8080/api/'
+axios.defaults.headers.common['Content-Type'] = 'application/json'
 
 const theme = createTheme({
   palette: {
