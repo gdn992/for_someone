@@ -1,6 +1,6 @@
 import i18next from 'i18next'
-import { enTranslations } from './localisation/en/ns'
-import { huTranslations } from './localisation/hu/ns'
+import { enTranslations } from './localisation/en/common'
+import { huTranslations } from './localisation/hu/common'
 import { initReactI18next } from 'react-i18next'
 
 i18next
