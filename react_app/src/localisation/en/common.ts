@@ -5,5 +5,5 @@ export const enTranslations: TranslationTypes = {
   games: 'Games',
   about: 'About',
   greeting: 'Hello, {{firstName}}!',
-  uglyDesign: 'Ugly design',
+  uglyDesign: 'Ugly design'
 }

@@ -10,9 +10,9 @@ i18next
     lng: 'en',
     resources: {
       en: { translation: enTranslations },
-      hu: { translation: huTranslations },
+      hu: { translation: huTranslations }
     },
-    interpolation: { escapeValue: false },
+    interpolation: { escapeValue: false }
   })
   .then(() => {
     console.log('i18n initialized')

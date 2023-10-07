@@ -5,5 +5,5 @@ export const huTranslations: TranslationTypes = {
   games: 'Játékok',
   about: 'Rólunk',
   greeting: 'Szia, {{firstName}}!',
-  uglyDesign: 'Csúnya dizájn',
+  uglyDesign: 'Csúnya dizájn'
 }
