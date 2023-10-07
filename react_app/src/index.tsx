@@ -6,6 +6,10 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
 import { createTheme, ThemeProvider } from '@mui/material'
+import axios from 'axios'
+
+// set default url
+axios.defaults.baseURL = 'https://localhost:8080/api/'
 
 const theme = createTheme({
   palette: {

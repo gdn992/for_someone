@@ -1,15 +1,8 @@
 import express, { Request, Response } from "express";
 import { readDb, writeDb } from "../db/dbHelper";
+import { Game } from "../types";
 
 const router = express.Router();
-
-interface Game {
-  id: number;
-  name: string;
-  publisher: string;
-  publishedDate: Date;
-  coverPicture: string;
-}
 
 // Get all games
 router.get("/", (req: Request, res: Response) => {

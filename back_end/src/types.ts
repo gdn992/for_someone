@@ -1,4 +1,4 @@
-interface Game {
+export interface Game {
   id: number;
   name: string;
   publisher: string;
@@ -6,9 +6,10 @@ interface Game {
   coverPicture: string;
 }
 
-interface Person {
+export interface Person {
   id: number;
   name: { first: string; last: string };
   games: Game["id"][]
+  url: string;
   description: string;
 }
