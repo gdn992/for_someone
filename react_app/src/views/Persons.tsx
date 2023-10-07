@@ -1,53 +1,35 @@
-import React, { useMemo } from 'react'
-import List from '@mui/material/List'
-import { useQuery } from 'react-query'
-import {
-  Avatar,
-  IconButton,
-  ListItem,
-  ListItemAvatar,
-  ListItemText
-} from '@mui/material'
-import DeleteIcon from '@mui/icons-material/Delete'
-import { getPersons } from '../api/getPersons'
-
-const useGetPersons = () => {
-  return useQuery({
-    queryFn: getPersons,
-    queryKey: ['person', 'list'],
-    select: ({ data }) => data
-  })
-}
+import React, { useState } from 'react'
+import { PersonsList } from './PersonsView/PersonsList'
+import ListSkeleton from '../components/ListSkeleton'
+import { Paper } from '@mui/material'
+import { Person } from '../types'
+import { useGetPersons } from '../api/hooks/person'
+import { PersonDetails } from './PersonDetails'
 
 const Persons: React.FC = () => {
-  const { data: persons } = useGetPersons()
-  const [dense, setDense] = React.useState(false)
-  const [secondary, setSecondary] = React.useState(false)
+  const { data: persons, isFetching } = useGetPersons()
+  const [openDetails, setOpenDetails] = useState<boolean>(false)
+  const [selectedPerson, setSelectedPerson] = useState<Person>()
 
-  const memoizePersons = useMemo(() => persons ?? [], [persons])
+  const handlePersonSelected = (person: Person) => {
+    setSelectedPerson(person)
+    setOpenDetails(true)
+  }
 
   return (
-    <List dense={dense}>
-      {memoizePersons.map((person) => (
-        <ListItem
-          secondaryAction={
-            <IconButton edge="end" aria-label="delete">
-              <DeleteIcon />
-            </IconButton>
-          }
-        >
-          <ListItemAvatar>
-            <Avatar >
-              <FolderIcon />
-            </Avatar>
-          </ListItemAvatar>
-          <ListItemText
-            primary="Single-line item"
-            secondary={secondary ? 'Secondary text' : null}
+    <Paper elevation={1} sx={{ display: 'flex' }}>
+      <>
+        {isFetching ? (
+          <ListSkeleton />
+        ) : (
+          <PersonsList
+            persons={persons ?? []}
+            onPersonSelected={handlePersonSelected}
           />
-        </ListItem>
-      ))}
-    </List>
+        )}
+        {openDetails && <PersonDetails person={selectedPerson} />}
+      </>
+    </Paper>
   )
 }
 
