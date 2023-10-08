@@ -1,5 +1,5 @@
-import ListSkeleton from '@components/ListSkeleton'
 import { Paper } from '@mui/material'
+import ListSkeleton from 'components/ListSkeleton'
 import React, { useState } from 'react'
 
 import { useGetPersons } from '../../api/hooks/person'

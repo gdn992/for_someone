@@ -16,9 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "baseUrl": "src",
-    "paths": {
-      "@components/*": ["components/*"]
-    }
+    "paths": { "components/*": ["components/*"] } // aliases for shorten imports
   },
   "include": ["src/**/*"]
 }
