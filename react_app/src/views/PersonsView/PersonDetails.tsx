@@ -1,21 +1,25 @@
+import { Skeleton } from '@mui/material'
+import Typography from '@mui/material/Typography'
 import React from 'react'
-import { FormProvider, useForm } from 'react-hook-form'
+import { useParams } from 'react-router-dom'
 
-import { Person } from '../../types'
-import { PersonDetailsFormContent } from '../PersonDetailsFormContent'
+import { useGetPerson } from '../../api/hooks/person'
 
-interface Props {
-  person?: Person
-}
+import { PersonDetailsForm, Props } from './PersonDetailsForm'
 
-export const PersonDetails: React.FC<Props> = ({ person }) => {
-  const formValues = useForm({
-    defaultValues: person
-  })
+export const PersonDetails: React.FC<Props> = () => {
+  const { id } = useParams()
+  if (id === undefined) {
+    return <PersonDetailsForm />
+  }
 
-  return (
-    <FormProvider {...formValues}>
-      <PersonDetailsFormContent />
-    </FormProvider>
+  const { data, isLoading } = useGetPerson(parseInt(id))
+
+  return isLoading ? (
+    <Skeleton />
+  ) : data ? (
+    <PersonDetailsForm person={data} />
+  ) : (
+    <Typography color="error">Something went wrong</Typography>
   )
 }
