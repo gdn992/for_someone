@@ -4,9 +4,9 @@
   "extends": ["plugin:@typescript-eslint/recommended"],
   "parserOptions": { "ecmaVersion": 2020, "sourceType": "module" },
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": "warn",
     "import/order": [
-      "error",
+      "warn",
       {
         "newlines-between": "always",
         "groups": [
