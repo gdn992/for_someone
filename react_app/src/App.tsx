@@ -1,17 +1,18 @@
-import React from 'react'
-import CssBaseline from '@mui/material/CssBaseline'
-import { HeaderToolbar } from './views/HeaderToolbar'
 import Box from '@mui/material/Box'
+import CssBaseline from '@mui/material/CssBaseline'
 import Toolbar from '@mui/material/Toolbar'
-import { Route, Routes } from 'react-router-dom'
-import Persons from './views/Persons'
-import Games from './views/Games'
-import About from './views/About'
+import React from 'react'
 import { QueryClientProvider } from 'react-query'
-import { QueryClient } from 'react-query';
+import { QueryClient } from 'react-query'
+import { Route, Routes } from 'react-router-dom'
+
+import About from './views/About'
+import Games from './views/Games'
+import { HeaderToolbar } from './views/HeaderToolbar'
+import Persons from './views/PersonsView/Persons'
 
 function App() {
-  const queryClient = new QueryClient();
+  const queryClient = new QueryClient()
 
   return (
     <QueryClientProvider client={queryClient}>

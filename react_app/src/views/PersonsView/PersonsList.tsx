@@ -1,6 +1,5 @@
-import { Person } from '../../types'
-import React from 'react'
-import List from '@mui/material/List'
+import AddIcon from '@mui/icons-material/Add'
+import DeleteIcon from '@mui/icons-material/Delete'
 import {
   Avatar,
   IconButton,
@@ -9,10 +8,13 @@ import {
   ListItemButton,
   ListItemText
 } from '@mui/material'
-import DeleteIcon from '@mui/icons-material/Delete'
-import AddIcon from '@mui/icons-material/Add'
-import { getPersonsName } from './utils/getPersonsName'
+import List from '@mui/material/List'
+import React from 'react'
+
 import { useDeletePersons } from '../../api/hooks/person'
+import { Person } from '../../types'
+
+import { getPersonsName } from './utils/getPersonsName'
 
 interface Props {
   persons: Person[]

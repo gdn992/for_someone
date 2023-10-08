@@ -1,6 +1,8 @@
-import { Person } from '../types'
-import { PERSONS_URL } from './endpoints'
 import axios from 'axios'
+
+import { Person } from '../types'
+
+import { PERSONS_URL } from './endpoints'
 
 export const getPersons = () => axios.get<Person[]>(PERSONS_URL)
 

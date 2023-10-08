@@ -1,7 +1,8 @@
-import { Person } from '../types'
 import React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
-import { PersonDetailsFormContent } from './PersonDetailsFormContent'
+
+import { Person } from '../../types'
+import { PersonDetailsFormContent } from '../PersonDetailsFormContent'
 
 interface Props {
   person?: Person
@@ -9,7 +10,7 @@ interface Props {
 
 export const PersonDetails: React.FC<Props> = ({ person }) => {
   const formValues = useForm({
-    defaultValues: person,
+    defaultValues: person
   })
 
   return (

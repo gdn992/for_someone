@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
-import { PersonsList } from './PersonsView/PersonsList'
-import ListSkeleton from '../components/ListSkeleton'
+import ListSkeleton from '@components/ListSkeleton'
 import { Paper } from '@mui/material'
-import { Person } from '../types'
-import { useGetPersons } from '../api/hooks/person'
+import React, { useState } from 'react'
+
+import { useGetPersons } from '../../api/hooks/person'
+import { Person } from '../../types'
+
 import { PersonDetails } from './PersonDetails'
+import { PersonsList } from './PersonsList'
 
 const Persons: React.FC = () => {
   const { data: persons, isFetching } = useGetPersons()

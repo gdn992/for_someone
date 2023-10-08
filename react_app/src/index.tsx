@@ -1,12 +1,13 @@
+import { createTheme, ThemeProvider } from '@mui/material'
+import axios from 'axios'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import './i18n'
+import { BrowserRouter } from 'react-router-dom'
+
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-import { BrowserRouter } from 'react-router-dom'
-import { createTheme, ThemeProvider } from '@mui/material'
-import axios from 'axios'
 
 axios.defaults.baseURL = 'http://localhost:8080/api/'
 axios.defaults.headers.common['Content-Type'] = 'application/json'
