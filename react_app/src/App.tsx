@@ -4,12 +4,12 @@ import Toolbar from '@mui/material/Toolbar'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
-import About from './views/About'
-import Games from './views/Games'
-import { HeaderToolbar } from './views/HeaderToolbar'
-import { PersonDetails } from './views/PersonsView/PersonDetails'
-import { PersonDetailsForm } from './views/PersonsView/PersonDetailsForm'
-import Persons from './views/PersonsView/Persons'
+import About from './components/pages/About'
+import Games from './components/pages/Games'
+import { HeaderToolbar } from './components/pages/HeaderToolbar'
+import { PersonDetails } from './components/pages/Persons/PersonDetails'
+import { PersonDetailsForm } from './components/pages/Persons/PersonDetailsForm'
+import Persons from './components/pages/Persons/Persons'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Routes>
           <Route path={'/persons'} element={<Persons />}>
             <Route path=":id" element={<PersonDetails />} />
-            <Route path="'new'" element={<PersonDetailsForm />} />
+            <Route path="new" element={<PersonDetailsForm />} />
           </Route>
           <Route path={'/games'} element={<Games />} />
           <Route path={'/about'} element={<About />} />

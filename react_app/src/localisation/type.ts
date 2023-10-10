@@ -1,4 +1,4 @@
-import { Navigation } from '../views/HeaderToolbar'
+import { Navigation } from '../components/pages/HeaderToolbar'
 
 export type TranslationTypes = {
   uglyDesign: string

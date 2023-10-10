@@ -10,8 +10,8 @@ import {
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { useDeletePersons } from '../../api/hooks/person'
-import { Person } from '../../types'
+import { useDeletePersons } from '../../../api/hooks/person'
+import { Person } from '../../../types'
 
 import { getPersonsName } from './utils/getPersonsName'
 

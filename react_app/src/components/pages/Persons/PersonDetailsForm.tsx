@@ -4,8 +4,9 @@ import React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
 import * as yup from 'yup'
 
-import { Person } from '../../types'
-import { PersonDetailsFormContent } from '../PersonDetailsFormContent'
+import { Person } from '../../../types'
+
+import { PersonDetailsFormContent } from './PersonDetailsFormContent'
 
 const schema = yup.object().shape({
   name: yup.object().shape({

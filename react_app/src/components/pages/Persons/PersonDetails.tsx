@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography'
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-import { useGetPerson } from '../../api/hooks/person'
+import { useGetPerson } from '../../../api/hooks/person'
 
 import { PersonDetailsForm, Props } from './PersonDetailsForm'
 

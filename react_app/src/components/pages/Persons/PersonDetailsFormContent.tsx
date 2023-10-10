@@ -1,10 +1,9 @@
 import { Avatar, TextField } from '@mui/material'
 import React from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
+import { ControlledTextField } from 'ui/ControlledTextField'
 
-import { Person } from '../types'
-
-import { ControlledTextField } from './ControlledTextField'
+import { Person } from '../../../types'
 
 export const PersonDetailsFormContent = () => {
   const { control, getValues } = useFormContext<Person>()
