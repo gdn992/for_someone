@@ -1,8 +1,8 @@
+import './index.css'
+
 import { createTheme, ThemeProvider } from '@mui/material'
 import axios from 'axios'
 import React from 'react'
-import './index.css'
-import './i18n'
 import ReactDOM from 'react-dom/client'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { BrowserRouter } from 'react-router-dom'
