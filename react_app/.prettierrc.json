@@ -1,0 +1,8 @@
+{
+  "jsonRecursiveSort": true,
+  "plugins": ["prettier-plugin-sort-json", "prettier-plugin-organize-imports"],
+  "printWidth": 80,
+  "semi": false,
+  "singleQuote": true,
+  "trailingComma": "none"
+}

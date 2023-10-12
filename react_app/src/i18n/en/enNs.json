@@ -1,7 +1,7 @@
 {
-  "persons": "Persons",
-  "games": "Games",
   "about": "About",
+  "games": "Games",
   "greeting": "Hello, {{firstName}}!",
+  "persons": "Persons",
   "uglyDesign": "Ugly design"
 }

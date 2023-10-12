@@ -1,7 +1,11 @@
 {
-  "persons": "Személyek",
-  "games": "Játékok",
   "about": "Rólunk",
+  "games": "Játékok",
   "greeting": "Szia, {{firstName}}!",
+  "nestedTranslation": {
+    "anotherInterestingThing": "egy másik érdekes dolog",
+    "someInterestingThings": "pár érdekes dolog"
+  },
+  "persons": "Személyek",
   "uglyDesign": "Csúnya dizájn"
 }
