@@ -1,7 +1,7 @@
 import { Skeleton } from '@mui/material'
 import Typography from '@mui/material/Typography'
+import { useGetPerson } from 'api/hooks/person'
 import { FC } from 'react'
-import { useGetPerson } from '../../../../api/hooks/person'
 import { withParam } from './HOCs/withParam'
 import { PersonDetailsForm } from './PersonDetailsForm'
 

@@ -1,11 +1,8 @@
 import { Paper } from '@mui/material'
+import { useGetPersons } from 'api/hooks/person'
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-
-import { useGetPersons } from '../../../api/hooks/person'
-import ListSkeleton from '../../../ui/ListSkeleton'
-
-import { PersonsList } from './PersonsList'
+import ListSkeleton from 'ui/ListSkeleton'
+import { PersonsList } from './list/PersonsList'
 
 const Persons: React.FC = () => {
   const { data: persons, isFetching } = useGetPersons()
@@ -13,7 +10,6 @@ const Persons: React.FC = () => {
   return (
     <Paper elevation={1} sx={{ display: 'flex' }}>
       {isFetching ? <ListSkeleton /> : <PersonsList persons={persons ?? []} />}
-      <Outlet />
     </Paper>
   )
 }

@@ -3,7 +3,6 @@ import path from 'path'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import webpack from 'webpack'
 
-console.log('dirname', __dirname)
 const config: webpack.Configuration = {
   mode: 'development',
   entry: './src/index.tsx',
@@ -28,7 +27,9 @@ const config: webpack.Configuration = {
     extensions: ['.tsx', '.ts', '.js'],
     alias: {
       // aliases for shorten imports
-      ui: path.resolve(__dirname, './ui/')
+      ui: path.resolve(__dirname, './ui/'),
+      api: path.resolve(__dirname, './api/'),
+      types: path.resolve(__dirname, './types/')
     }
   },
   output: {

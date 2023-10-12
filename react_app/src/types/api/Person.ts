@@ -1,10 +1,4 @@
-interface Game {
-  id: number
-  name: string
-  publisher: string
-  publishedDate: Date
-  coverPicture: string
-}
+import { Game } from './game'
 
 export interface Person {
   id: number

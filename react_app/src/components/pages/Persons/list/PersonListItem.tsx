@@ -7,13 +7,10 @@ import {
   ListItemButton,
   ListItemText
 } from '@mui/material'
-import React from 'react'
+import { useDeletePersons } from 'api/hooks/person'
 import { useNavigate } from 'react-router-dom'
-
-import { useDeletePersons } from '../../../api/hooks/person'
-import { Person } from '../../../types'
-
-import { getPersonsName } from './utils/getPersonsName'
+import { Person } from 'types/api/Person'
+import { getPersonsName } from '../utils/getPersonsName'
 
 export const PersonListItem = ({
   person: { id, name, games, url }

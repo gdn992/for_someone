@@ -2,10 +2,8 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import Button from '@mui/material/Button'
 import React from 'react'
 import { FormProvider, useForm } from 'react-hook-form'
+import { Person } from 'types/api/Person'
 import * as yup from 'yup'
-
-import { Person } from '../../../types'
-
 import { PersonDetailsFormContent } from './PersonDetailsFormContent'
 
 const schema = yup.object().shape({

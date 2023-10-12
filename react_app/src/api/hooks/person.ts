@@ -1,7 +1,6 @@
 import { useMutation, useQuery, useQueryClient } from 'react-query'
 import { useNavigate, useParams } from 'react-router-dom'
-
-import { Person } from '../../types'
+import { Person } from 'types/api/Person'
 import { deletePerson, getPerson, getPersons } from '../getPersons'
 
 export const useGetPersons = () => {

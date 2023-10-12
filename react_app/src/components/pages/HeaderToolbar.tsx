@@ -34,7 +34,7 @@ export const HeaderToolbar: React.FC = () => {
                 navigate(navItem)
               }}
             >
-              {t(navItem)}
+              {t('uglyDesign')}
             </Button>
           ))}
         </Box>

@@ -3,9 +3,7 @@ import { IconButton, ListItem } from '@mui/material'
 import List from '@mui/material/List'
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-
-import { Person } from '../../../types'
-
+import { Person } from 'types/api/Person'
 import { PersonListItem } from './PersonListItem'
 
 interface Props {
@@ -17,7 +15,7 @@ export const PersonsList: React.FC<Props> = ({ persons }) => {
   return (
     <List sx={{ width: 250 }}>
       {persons.map((person) => (
-        <PersonListItem person={person} />
+        <PersonListItem key={person.id} person={person} />
       ))}
       <ListItem sx={{ justifyContent: 'center' }}>
         <IconButton onClick={() => navigate('new')}>

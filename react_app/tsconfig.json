@@ -13,7 +13,12 @@
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
-    "paths": { "ui/*": ["ui/*"] }, // aliases for shorten imports
+    "paths": {
+      // aliases for shorten imports
+      "api/*": ["api/*"],
+      "types/*": ["types/*"],
+      "ui/*": ["ui/*"]
+    },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

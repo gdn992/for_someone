@@ -1,7 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
-
-import { Person } from '../types'
-
+import { Person } from 'types/api/Person'
 import { PERSONS_URL } from './endpoints'
 
 const getData = <T>(response: AxiosResponse<T>): T => response.data
